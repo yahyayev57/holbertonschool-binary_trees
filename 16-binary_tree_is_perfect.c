@@ -3,7 +3,7 @@
 /**
  * binary_tree_depth - Measures depth of tree (distance from root to leaf)
  * @tree: Pointer to the node.
- * 
+ *
  * Return: Depth (levels count), 0 if NULL.
  */
 size_t binary_tree_depth(const binary_tree_t *tree)
@@ -18,7 +18,6 @@ size_t binary_tree_depth(const binary_tree_t *tree)
 
 	return (depth);
 }
-
 
 /**
  * is_perfect_rec - Helper recursive function to check perfectness.
@@ -43,7 +42,7 @@ int is_perfect_rec(const binary_tree_t *tree, size_t depth, size_t level)
 
 	/* Check left and right subtrees */
 	return (is_perfect_rec(tree->left, depth, level + 1) &&
-	        is_perfect_rec(tree->right, depth, level + 1));
+		is_perfect_rec(tree->right, depth, level + 1));
 }
 
 /**
@@ -65,4 +64,3 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	/* Check recursively */
 	return (is_perfect_rec(tree, depth, 0));
 }
-
