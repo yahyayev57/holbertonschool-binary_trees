@@ -30,6 +30,8 @@ void binary_tree_print(const binary_tree_t *);
 
 int binary_tree_is_full(const binary_tree_t *tree);
 
+int binary_tree_is_perfect(const binary_tree_t *tree);
+
 
 /* You may also have these optional helper functions */
 int binary_tree_height(const binary_tree_t *tree);
