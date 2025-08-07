@@ -64,3 +64,4 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 	/* Check recursively */
 	return (is_perfect_rec(tree, depth, 0));
 }
+
